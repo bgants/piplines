@@ -8,4 +8,11 @@ pipeline {
         stagingServer = 'staging-myproject.mycompany.com'
         productionServer = 'production-myproject.mycompany.com'
     }
+    stages {
+        stage('Validate Git') {
+            steps {
+            }
+        }
+    }
+
 }
