@@ -1,7 +1,3 @@
-environment {
-    productionServer = 'my-production-server.com'
-}
-
 def myTestFunc() {
-    return "value"
+    echo "hi there from groovy files"
 }
