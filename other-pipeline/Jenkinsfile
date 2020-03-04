@@ -1,5 +1,6 @@
 pipeline {
-  environment {
+    agent any
+    environment {
         branch = 'master'
         scmUrl = 'ssh://git@myScmServer.com/repos/myRepo.git'
         serverPort = '8080'
