@@ -12,8 +12,10 @@ pipeline {
         stage('Validate Git') {
             steps {
                 sh 'ls -al'
-                myGrrovyClass.myTestFunc()				
-				echo "this is defined --> ${productionServer} in another Jenkinsfile"
+                script {
+                    myGrrovyClass.myTestFunc()				
+				    echo "this is defined --> ${productionServer} in another Jenkinsfile"
+                }
             }
         }
     }
