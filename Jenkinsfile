@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Load other file') {
             steps {
-               load 'other-pipeline/Jenkinsfile  
+               load 'other-pipeline/Jenkinsfile'
             }
         }
         stage('Validate Git') {
