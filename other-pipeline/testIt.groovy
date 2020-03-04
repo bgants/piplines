@@ -1,4 +1,5 @@
 environment {
+    productionServer = 'my-production-server.com'
     field = func()
 }
 
