@@ -10,7 +10,7 @@ pipeline {
         stage('Validate Git') {
             steps {
                 sh 'ls -al'
-                field				
+                testIt.field				
 				echo "this is defined --> ${productionServer} in another Jenkinsfile"
             }
         }
