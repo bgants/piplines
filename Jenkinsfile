@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh 'ls -al'
                 script {
-                    myGrrovyClass.myTestFunc()				
+                    myGroovyClass.myTestFunc()				
 				    echo "this is defined --> ${productionServer} in another Jenkinsfile"
                 }
             }
