@@ -1,3 +1,3 @@
-def myTestFunc() {
-    echo "hi there from groovy files"
+def testMethod() {
+    println( "hi there from groovy files");
 }
