@@ -1,8 +1,7 @@
 environment {
     productionServer = 'my-production-server.com'
-    field = func()
 }
 
-def func() {
+def myTestFunc() {
     return "value"
 }
