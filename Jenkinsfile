@@ -15,9 +15,9 @@ pipeline {
                 sh 'ls -al'
                 script {
                     modules.testIt.testMethod()
+                    modules.testIt.notifier()
                 }
             }
         }
     }
-
 }
