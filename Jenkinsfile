@@ -1,3 +1,4 @@
+def modules = [:]
 pipeline {
     agent any
 
@@ -5,7 +6,7 @@ pipeline {
         stage('Load other file') {
             steps {
                script {
-                   myGroovyClass = load 'other-pipeline/testIt.groovy'
+                   modules.testIt = load 'other-pipeline/testIt.groovy'
                }
             }
         }
@@ -13,8 +14,7 @@ pipeline {
             steps {
                 sh 'ls -al'
                 script {
-                    myGroovyClass.myTestFunc()				
-				    echo "this is defined --> ${productionServer} in another Jenkinsfile"
+                    modules.testIt.myTestFunc()				
                 }
             }
         }
