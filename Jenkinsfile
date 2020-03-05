@@ -16,7 +16,7 @@ pipeline {
                 sh 'ls -al'
                 script {
                     modules.testIt.testMethod()
-                    modules.testIt.notifier(emailAddreses,${env.BUILD_URL},${currentBuild.result})
+                    modules.testIt.notifier(emailAddreses)
                 }
             }
         }
