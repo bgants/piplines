@@ -1,4 +1,5 @@
 def modules = [:]
+def emailAddreses = ['robert.gants@solers.com'] 
 pipeline {
     agent any
 
@@ -15,7 +16,7 @@ pipeline {
                 sh 'ls -al'
                 script {
                     modules.testIt.testMethod()
-                    modules.testIt.notifier()
+                    modules.testIt.notifier(emailAddreses)
                 }
             }
         }
