@@ -1,5 +1,5 @@
 def modules = [:]
-def emailAddreses = [\'robert.gants@solers.com\'] 
+def emailAddreses = ['robert.gants@solers.com'] 
 pipeline {
     agent any
 

@@ -3,9 +3,9 @@ def testMethod() {
 }
 
 def notifier(emailAddreses) {
-   println("mail to: ${emailAddreses},");
-   println("subject: \"status of pipeline: ${currentBuild.fullDisplayName}\",");
-   println("body: \"${env.BUILD_URL} has result ${currentBuild.result}\" ");
+  mail to: 'robert.gants@solers.com, kaleigh.rosenburg@solers.com',
+  subject: "status of pipeline: ${currentBuild.fullDisplayName}",
+  body: "${env.BUILD_URL} has result ${currentBuild.result}"
 }
 
 
