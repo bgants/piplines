@@ -24,7 +24,7 @@ pipeline {
    post {
         changed {
             script {
-                modules.testIt.testMethod(emailAddresses)
+                modules.testIt.notifier(emailAddresses)
             }
         }
     }
