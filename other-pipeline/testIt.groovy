@@ -4,6 +4,7 @@ def testMethod(emailAddresses) {
 }
 
 def notifier(emailAddresses) {
+  println("In call to notifier");
   mail to: emailAddresses.join(","),
   subject: "status of pipeline: ${currentBuild.fullDisplayName}",
   body: "${env.BUILD_URL} has result ${currentBuild.result}"
