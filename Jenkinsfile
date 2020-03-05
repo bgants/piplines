@@ -16,9 +16,15 @@ pipeline {
                 sh 'ls -al'
                 script {
                     modules.testIt.testMethod(emailAddresses)
-                    modules.testIt.notifier(emailAddresses)
                 }
             }
         }
     }
+
+   post {
+        changed {
+            modules.testIt.notifier(emailAddresses)
+        }
+    }
+
 }
